@@ -81,12 +81,13 @@ slides.options = {
 
 ## Properties
 
-| Property    | Attribute   | Description                                                                                  | Type            | Default     |
-| ----------- | ----------- | -------------------------------------------------------------------------------------------- | --------------- | ----------- |
-| `mode`      | `mode`      | The mode determines which platform styles to use.                                            | `"ios" \| "md"` | `undefined` |
-| `options`   | `options`   | Options to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options | `any`           | `{}`        |
-| `pager`     | `pager`     | If `true`, show the pagination.                                                              | `boolean`       | `false`     |
-| `scrollbar` | `scrollbar` | If `true`, show the scrollbar.                                                               | `boolean`       | `false`     |
++| Property     | Attribute    | Description                                                                                  | Type            | Default     |
++| ------------ | ------------ | -------------------------------------------------------------------------------------------- | --------------- | ----------- |
++| `mode`       | `mode`       | The mode determines which platform styles to use.                                            | `"ios" \| "md"` | `undefined` |
++| `navigation` | `navigation` | If `true`, show the navigation arrows.                                                       | `boolean`       | `false`     |
++| `options`    | `options`    | Options to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options | `any`           | `{}`        |
++| `pager`      | `pager`      | If `true`, show the pagination.                                                              | `boolean`       | `false`     |
++| `scrollbar`  | `scrollbar`  | If `true`, show the scrollbar.                                                               | `boolean`       | `false`     |
 
 
 ## Events

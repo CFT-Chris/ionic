@@ -18,6 +18,8 @@ export class Slides implements ComponentInterface {
 
   private scrollbarEl?: HTMLElement;
   private paginationEl?: HTMLElement;
+  private nextSlideEl?: HTMLElement;
+  private prevSlideEl?: HTMLElement;
   private didInit = false;
 
   private readySwiper!: (swiper: SwiperInterface) => void;
@@ -54,6 +56,11 @@ export class Slides implements ComponentInterface {
    * If `true`, show the scrollbar.
    */
   @Prop() scrollbar = false;
+  
+  /**
+   * If `true`, show the navigation arrows.
+   */
+  @Prop() navigation = false;
 
   /**
    * Emitted after Swiper initialization
@@ -402,6 +409,13 @@ export class Slides implements ComponentInterface {
       };
     }
 
+    if (this.navigation) {
+      swiperOptions.navigation = {
+        nextEl: this.nextSlideEl!,
+        prevEl: this.prevSlideEl!
+      }
+    }
+
     // Keep the event options separate, we dont want users
     // overwriting these
     const eventOptions: SwiperOptions = {
@@ -448,7 +462,9 @@ export class Slides implements ComponentInterface {
         <slot></slot>
       </div>,
       this.pager && <div class="swiper-pagination" ref={el => this.paginationEl = el}></div>,
-      this.scrollbar && <div class="swiper-scrollbar" ref={el => this.scrollbarEl = el}></div>
+      this.scrollbar && <div class="swiper-scrollbar" ref={el => this.scrollbarEl = el}></div>,
+      this.navigation && <div class="swiper-button-next" ref={el => this.nextSlideEl = el}></div>,
+      this.navigation && <div class="swiper-button-prev" ref={el => this.prevSlideEl = el}></div>
     ];
   }
 }

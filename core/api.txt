@@ -980,6 +980,7 @@ ion-slide
 
 ion-slides
 ion-slides,prop,mode,"ios" | "md",undefined,false,false
+ion-slides,prop,navigation,boolean,false,false,false
 ion-slides,prop,options,any,{},false,false
 ion-slides,prop,pager,boolean,false,false,false
 ion-slides,prop,scrollbar,boolean,false,false,false

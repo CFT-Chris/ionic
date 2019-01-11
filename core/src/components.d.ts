@@ -4142,6 +4142,10 @@ export namespace Components {
     */
     'mode': Mode;
     /**
+    * If `true`, show the navigation arrows.
+    */
+    'navigation': boolean;
+    /**
     * Options to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options
     */
     'options': any;
@@ -4183,6 +4187,10 @@ export namespace Components {
     * The mode determines which platform styles to use.
     */
     'mode'?: Mode;
+    /**
+    * If `true`, show the navigation arrows.
+    */
+    'navigation': boolean;
     /**
     * Emitted after the active slide has changed.
     */
