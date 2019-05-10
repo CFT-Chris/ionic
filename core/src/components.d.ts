@@ -4190,7 +4190,7 @@ export namespace Components {
     /**
     * If `true`, show the navigation arrows.
     */
-    'navigation': boolean;
+    'navigation'?: boolean;
     /**
     * Emitted after the active slide has changed.
     */

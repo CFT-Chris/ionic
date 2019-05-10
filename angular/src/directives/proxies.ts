@@ -770,7 +770,7 @@ export class IonSlide {
 }
 
 export declare interface IonSlides extends StencilComponents<'IonSlides'> {}
-@Component({ selector: 'ion-slides', changeDetection: 0, template: '<ng-content></ng-content>', inputs: ['mode', 'navigation', 'options', 'pager', 'scrollbar'] })
+@Component({ selector: 'ion-slides', changeDetection: 0, template: '<ng-content></ng-content>', inputs: ['mode', 'options', 'pager', 'scrollbar', 'navigation'] })
 export class IonSlides {
   ionSlidesDidLoad!: EventEmitter<CustomEvent>;
   ionSlideTap!: EventEmitter<CustomEvent>;
@@ -796,7 +796,7 @@ export class IonSlides {
   }
 }
 proxyMethods(IonSlides, ['update', 'slideTo', 'slideNext', 'slidePrev', 'getActiveIndex', 'getPreviousIndex', 'length', 'isEnd', 'isBeginning', 'startAutoplay', 'stopAutoplay', 'lockSwipeToNext', 'lockSwipeToPrev', 'lockSwipes']);
-proxyInputs(IonSlides, ['mode', 'navigation', 'options', 'pager', 'scrollbar']);
+proxyInputs(IonSlides, ['mode', 'options', 'pager', 'scrollbar', 'navigation']);
 
 export declare interface IonSpinner extends StencilComponents<'IonSpinner'> {}
 @Component({ selector: 'ion-spinner', changeDetection: 0, template: '<ng-content></ng-content>', inputs: ['color', 'duration', 'name', 'paused'] })
